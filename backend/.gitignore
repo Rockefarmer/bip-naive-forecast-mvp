@@ -1,0 +1,15 @@
+# Ignore environment variables and sensitive files
+.env
+
+# Cache and build files
+__pycache__/
+*.pyc
+
+# Virtual environment directories
+.venv/
+
+# macOS metadata
+.DS_Store
+
+# transcripts (keep local)
+api/transcripts/*.txt

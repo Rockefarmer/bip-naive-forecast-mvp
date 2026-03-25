@@ -1,0 +1,28 @@
+# --- Core API ---
+fastapi>=0.100,<1
+uvicorn[standard]>=0.22,<1
+pydantic>=1.10,<3
+requests>=2.31,<3
+python-dotenv>=1.0,<2
+
+# --- Data Processing ---
+pandas>=1.5,<3
+numpy>=1.24,<3
+
+# --- Forecasting Models (The Brain) ---
+statsmodels>=0.14,<1
+
+# IMPORTANT: You need these to load your thesis model (TFT + FinBERT)
+# If installing on Windows fails, install PyTorch manually from pytorch.org first
+torch>=2.0
+pytorch-forecasting>=0.10
+lightning>=2.0
+torchmetrics>=1.0
+tensorboard>=2.14
+
+# --- Google Generative AI Client ---
+google-genai>=0.1.0
+
+# --- Optional Web Dashboard (Keep only if you still use Streamlit) ---
+# streamlit>=1.25,<2
+# plotly>=5.17,<6
